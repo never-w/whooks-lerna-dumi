@@ -1,0 +1,10 @@
+node_modules
+yarn.lock
+lerna-debug.log
+.umi
+
+## 构建文件
+es
+lib
+docs-dist
+

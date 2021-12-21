@@ -1,0 +1,58 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes",
+    "publish": "lerna publish",
+    "build": "father-build",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "test": "jest",
+    "test-s": "jest packages/hooks-web/src/use-document-event/__tests__",
+    "test-c": "jest --coverage",
+    "lint": "eslint packages --fix --ext .ts",
+    "lint:ts": "tsc --noEmit && eslint packages --ext .ts,.tsx",
+    "prettier": "prettier --write 'packages/**/*.{js,json,yml,yaml,css,scss,less,ts,tsx,md}'",
+    "commit": "npx git-cz",
+    "lint-staged": "lint-staged --allow-empty",
+    "prepare": "husky install",
+    "ncu": "npx npm-check-updates -u"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@fruits-chain/eslint-config-preset": "^0.1.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.3",
+    "dumi": "^1.1.37",
+    "father-build": "^1.20.4",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.1.3",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  },
+  "resolutions": {
+    "prettier": "^2.3.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "lint-staged": {
+    "packages/**.{yml,yaml,css,scss,less,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "packages/**.{js,jsx,json,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
