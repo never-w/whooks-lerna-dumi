@@ -1,11 +1,1 @@
-# `hooks`
-
-> TODO: description
-
-## Usage
-
-```
-const hooks = require('hooks');
-
-// TODO: DEMONSTRATE API
-```
+## 通用的 hooks

@@ -1,11 +1,1 @@
-# `rnHooks`
-
-> TODO: description
-
-## Usage
-
-```
-const rnhooks = require('rnHooks');
-
-// TODO: DEMONSTRATE API
-```
+## react-native-Hooks

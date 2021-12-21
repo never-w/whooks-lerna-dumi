@@ -1,8 +1,8 @@
 import { defineConfig } from 'dumi'
-// import type WebpackChain from 'webpack-chain'
+import type WebpackChain from 'webpack-chain'
 
 export default defineConfig({
-  chainWebpack(memo) {
+  chainWebpack(memo: WebpackChain) {
     memo.plugins.delete('copy')
   },
   title: 'whooks',
@@ -13,7 +13,6 @@ export default defineConfig({
   alias: {
     '@': './src',
   },
-  includes: ['docs', 'packages/pkg/src'],
   navs: [
     null,
     {
@@ -23,18 +22,6 @@ export default defineConfig({
     { title: '帮助', path: 'https://www.baidu.com' },
   ],
   styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.17.3/antd.min.css'],
-  // menus: {
-  //   '/guide': [
-  //     {
-  //       title: '介绍',
-  //       path: '/guide/foo',
-  //     },
-  //     {
-  //       title: 'Blog',
-  //       path: '/guide/foo1',
-  //     },
-  //   ],
-  // },
   locales: [['zh-CN', '中文']],
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
 })
