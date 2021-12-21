@@ -15,7 +15,8 @@
     "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "hooks": ["./packages/hooks/src"]
+      "w-hooks": ["./packages/hooks/src"],
+      "w-rnhooks": ["./packages/rnHooks/src"]
     }
   },
   "include": ["packages/**/*.ts", "packages/**/*.tsx"],

@@ -1,11 +1,6 @@
-/**
- * title: 基础用法
- * desc: 在组件卸载时执行方法。
- */
-
 import React, { useState } from 'react'
 import { message } from 'antd'
-import { useUnmount } from 'w-hooks'
+import { useUnmount } from 'w-rnhooks'
 
 const MyComponent = () => {
   useUnmount(() => {

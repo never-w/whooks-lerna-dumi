@@ -1,6 +1,8 @@
 import { defineConfig } from 'dumi'
 import type WebpackChain from 'webpack-chain'
 
+const repo = 'whooks'
+
 export default defineConfig({
   chainWebpack(memo: WebpackChain) {
     memo.plugins.delete('copy')
@@ -13,6 +15,8 @@ export default defineConfig({
   alias: {
     '@': './src',
   },
+  base: `/${repo}/`,
+  publicPath: `/${repo}/`,
   navs: [
     null,
     {

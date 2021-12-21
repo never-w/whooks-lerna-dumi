@@ -1,6 +1,6 @@
 import { useMemo, useRef } from 'react'
 import { debounce } from 'lodash'
-import { useUnmount } from 'hooks'
+import { useUnmount } from 'w-hooks'
 
 type noop = (...args: any) => any
 interface DebounceOptions {

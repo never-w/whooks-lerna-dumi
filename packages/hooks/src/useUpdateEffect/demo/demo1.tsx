@@ -4,7 +4,7 @@
  */
 
 import React, { useEffect, useState } from 'react'
-import { useUpdateEffect } from 'hooks'
+import { useUpdateEffect } from 'w-hooks'
 
 export default () => {
   const [count, setCount] = useState(0)

@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react'
 import { message } from 'antd'
-import { useMount } from 'hooks'
+import { useMount } from 'w-hooks'
 
 const MyComponent = () => {
   useMount(() => {

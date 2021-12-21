@@ -5,7 +5,7 @@
 
 import { message } from 'antd'
 import React, { useEffect, useState } from 'react'
-import { useDestroyedRef } from 'hooks'
+import { useDestroyedRef } from 'w-hooks'
 
 const MyComponent = () => {
   const destroyedRef = useDestroyedRef()

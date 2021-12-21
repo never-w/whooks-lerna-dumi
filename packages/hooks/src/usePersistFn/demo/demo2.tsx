@@ -5,7 +5,7 @@
 
 import { message } from 'antd'
 import React, { useCallback, useRef, useState } from 'react'
-import { usePersistFn } from 'hooks'
+import { usePersistFn } from 'w-hooks'
 
 export default () => {
   const [count, setCount] = useState(0)

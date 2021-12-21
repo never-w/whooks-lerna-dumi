@@ -1,11 +1,11 @@
 {
-  "name": "hooks",
+  "name": "w-hooks",
   "version": "1.0.0",
   "description": "description",
-  "author": "yinqiao <1737666820@qq.com>",
+  "author": "yinqiao<1737666820@qq.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/hooks.js",
+  "main": "src/index.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

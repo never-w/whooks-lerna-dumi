@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react'
-import { useDebounceFn } from 'hooks'
+import { useDebounceFn } from 'w-hooks'
 
 export default () => {
   const [value, setValue] = useState(0)
