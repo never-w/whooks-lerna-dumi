@@ -17,6 +17,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
+    "@types/react-native": "^0.66.9",
+    "react-native": "^0.66.4",
     "w-hooks": "^1.0.0"
+  },
+  "dependencies": {
+    "react-native-safe-area-context": "^3.3.2"
   }
 }
