@@ -16,7 +16,7 @@ group:
 
 ## 到未来某一时间点的倒计时
 
-<!-- <code src="./demo/demo1.tsx" /> -->
+<code src="./demo/demo1.tsx" />
 
 ## 配置项动态变化
 

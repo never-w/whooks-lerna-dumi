@@ -58,6 +58,7 @@ const useCountdown = (options?: Options) => {
 
     const timer = setInterval(() => {
       const targetLeft = calcLeft(targetDate)
+
       setTimeLeft(targetLeft)
       if (targetLeft === 0) {
         clearInterval(timer)
