@@ -19,7 +19,7 @@ type UseAnimationConfig = TimingAnimationConfig | SpringAnimationConfig
 const getInitialValue = (config: UseAnimationConfig) => {
   if (typeof config.initialValue !== 'undefined') return config.initialValue
   else {
-    return config.toValue as number // TODO deal with other types possibilities here
+    return config.toValue as number
   }
 }
 
