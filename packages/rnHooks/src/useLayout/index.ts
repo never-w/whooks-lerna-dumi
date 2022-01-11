@@ -14,10 +14,7 @@ export default function useLayout() {
     width: 0,
     height: 0,
   })
-  const onLayout = useCallback(
-    e => setLayout(e.nativeEvent.layout as LayoutRectangle),
-    [],
-  )
+  const onLayout = useCallback(e => setLayout(e.nativeEvent.layout as LayoutRectangle), [])
 
   return {
     onLayout,
