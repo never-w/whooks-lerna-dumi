@@ -4,7 +4,7 @@
  */
 
 import React, { useEffect, useState } from 'react'
-import { useUpdateEffect } from 'w-hooks'
+import { useUpdateEffect } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const [count, setCount] = useState(0)

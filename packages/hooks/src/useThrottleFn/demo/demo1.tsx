@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react'
-import { useThrottleFn } from 'w-hooks'
+import { useThrottleFn } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const [value, setValue] = useState(0)

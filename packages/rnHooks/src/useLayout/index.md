@@ -19,7 +19,7 @@ group:
 ### 基础示例
 
 ```typescript
-import { useLayout } from 'w-rnhooks'
+import { useLayout } from '@fruits-chain/hooks-laba-rn'
 
 const { onLayout, ...layout } = useLayout()
 

@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react'
 import { message } from 'antd'
-import { useMount } from 'w-hooks'
+import { useMount } from '@fruits-chain/hooks-laba'
 
 const MyComponent = () => {
   useMount(() => {

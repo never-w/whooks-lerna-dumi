@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react'
-import { useControllableValue } from 'w-hooks'
+import { useControllableValue } from '@fruits-chain/hooks-laba'
 
 const ControllableComponent = (props: any) => {
   const [state, setState] = useControllableValue<string>(props)

@@ -15,8 +15,8 @@
     "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "w-hooks": ["./packages/hooks/src"],
-      "w-rnhooks": ["./packages/rnHooks/src"]
+      "@fruits-chain/hooks-laba": ["./packages/hooks/src"],
+      "@fruits-chain/hooks-laba-rn": ["./packages/rnHooks/src"]
     }
   },
   "include": ["packages/**/*.ts", "packages/**/*.tsx"],

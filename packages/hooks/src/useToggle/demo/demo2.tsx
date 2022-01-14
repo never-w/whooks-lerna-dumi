@@ -3,13 +3,10 @@
  * desc: 接受两个可选参数，在它们之间进行切换。
  */
 import React from 'react'
-import { useToggle } from 'w-hooks'
+import { useToggle } from '@fruits-chain/hooks-laba'
 
 export default () => {
-  const [state, { toggle, set, setLeft, setRight }] = useToggle(
-    'Hello',
-    'World',
-  )
+  const [state, { toggle, set, setLeft, setRight }] = useToggle('Hello', 'World')
 
   return (
     <div>
@@ -18,10 +15,7 @@ export default () => {
         <button type="button" onClick={toggle}>
           Toggle
         </button>
-        <button
-          type="button"
-          onClick={() => set('Hello')}
-          style={{ margin: '0 8px' }}>
+        <button type="button" onClick={() => set('Hello')} style={{ margin: '0 8px' }}>
           Set Hello
         </button>
         <button type="button" onClick={() => set('World')}>

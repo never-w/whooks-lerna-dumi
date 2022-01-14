@@ -21,7 +21,7 @@ react native 动画 hook。
 ```typescript
 import React, { useState } from 'react'
 import { Animated, Switch, View } from 'react-native'
-import { useAnimation } from 'w-rnhooks'
+import { useAnimation } from '@fruits-chain/hooks-laba-rn'
 
 export default () => {
   const [bool, setBool] = useState(false)

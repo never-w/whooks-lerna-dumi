@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useIsFocused } from '@react-navigation/native'
-import { usePersistFn } from 'w-rnhooks'
+import { usePersistFn } from '@fruits-chain/hooks-laba'
 
 const useNavigationResume = (callback: () => void) => {
   const isFocused = useIsFocused()

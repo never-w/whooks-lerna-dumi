@@ -5,7 +5,7 @@
 
 import React from 'react'
 import dayjs from 'dayjs'
-import { useUpdate } from 'w-hooks'
+import { useUpdate } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const update = useUpdate()

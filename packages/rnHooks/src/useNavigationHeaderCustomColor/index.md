@@ -19,7 +19,7 @@ group:
 ### 基础示例
 
 ```typescript
-import { useNavigationHeaderCustomColor } from 'w-rnhooks'
+import { useNavigationHeaderCustomColor } from '@fruits-chain/hooks-laba-rn'
 
 useNavigationHeaderCustomColor({
   headerStyle: {

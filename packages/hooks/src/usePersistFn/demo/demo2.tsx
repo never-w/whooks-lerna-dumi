@@ -5,7 +5,7 @@
 
 import { message } from 'antd'
 import React, { useCallback, useRef, useState } from 'react'
-import { usePersistFn } from 'w-hooks'
+import { usePersistFn } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const [count, setCount] = useState(0)
@@ -29,9 +29,7 @@ export default () => {
         Add Count
       </button>
 
-      <p>
-        You can click the button to see the number of sub-component renderings
-      </p>
+      <p>You can click the button to see the number of sub-component renderings</p>
 
       <div style={{ marginTop: 32 }}>
         <h3>Component with useCallback function:</h3>

@@ -4,7 +4,7 @@
  */
 
 import React from 'react'
-import { useCountDown } from 'w-hooks'
+import { useCountDown } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const [countdown, formattedRes] = useCountDown({
@@ -14,8 +14,8 @@ export default () => {
 
   return (
     <p>
-      There are {days} days {hours} hours {minutes} minutes {seconds} seconds{' '}
-      {milliseconds} milliseconds until 2022-12-31 24:00:00
+      There are {days} days {hours} hours {minutes} minutes {seconds} seconds {milliseconds}{' '}
+      milliseconds until 2022-12-31 24:00:00
     </p>
   )
 }

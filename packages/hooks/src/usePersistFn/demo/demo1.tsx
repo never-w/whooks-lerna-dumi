@@ -5,7 +5,7 @@
 
 import React, { useState, useCallback } from 'react'
 import { message } from 'antd'
-import { usePersistFn } from 'w-hooks'
+import { usePersistFn } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const [count, setCount] = useState(0)

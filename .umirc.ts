@@ -1,13 +1,13 @@
 import { defineConfig } from 'dumi'
 import type WebpackChain from 'webpack-chain'
 
-const repo = 'whooks'
+const repo = 'hooks-laba'
 
 export default defineConfig({
   chainWebpack(memo: WebpackChain) {
     memo.plugins.delete('copy')
   },
-  title: 'whooks',
+  title: 'hooks-laba',
   favicon: 'https://avatars.githubusercontent.com/u/80503467?v=4',
   logo: 'https://avatars.githubusercontent.com/u/80503467?v=4',
   outputPath: 'docs-dist',

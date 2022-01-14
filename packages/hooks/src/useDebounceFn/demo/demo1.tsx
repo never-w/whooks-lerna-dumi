@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react'
-import { useDebounceFn } from 'w-hooks'
+import { useDebounceFn } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const [value, setValue] = useState(0)

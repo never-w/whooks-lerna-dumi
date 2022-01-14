@@ -1,6 +1,6 @@
 ---
 hero:
-  title: whooks
+  title: hooks-laba
   desc: 开箱即用的React Typescript Hooks
   actions:
     - text: 开始

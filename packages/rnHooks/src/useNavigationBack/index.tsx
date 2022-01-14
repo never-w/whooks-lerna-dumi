@@ -1,7 +1,7 @@
 import { useLayoutEffect, ReactElement } from 'react'
 import { BackHandler } from 'react-native'
 import { useNavigation, useIsFocused } from '@react-navigation/native'
-import { usePersistFn } from 'w-hooks'
+import { usePersistFn } from '@fruits-chain/hooks-laba'
 
 interface NavigationBackParams {
   /** 自定义返回按键组件 */
@@ -36,36 +36,25 @@ const useNavigationBack = ({
   useLayoutEffect(() => {
     if (resetHeaderBack) {
       navigation.setOptions({
-        headerLeft: () =>
-          backShown ? backNavigationElementFn(onPressBackArrow) : null,
+        headerLeft: () => (backShown ? backNavigationElementFn(onPressBackArrow) : null),
         gestureEnabled: false,
       })
     }
 
     // Android 物理返回按钮
-    const backHandler = BackHandler.addEventListener(
-      'hardwareBackPress',
-      () => {
-        if (isFocused) {
-          onPressBackArrow()
-          return true
-        } else {
-          return false
-        }
-      },
-    )
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (isFocused) {
+        onPressBackArrow()
+        return true
+      } else {
+        return false
+      }
+    })
 
     return () => {
       backHandler.remove()
     }
-  }, [
-    resetHeaderBack,
-    onPressBackArrow,
-    navigation,
-    isFocused,
-    backShown,
-    backNavigationElementFn,
-  ])
+  }, [resetHeaderBack, onPressBackArrow, navigation, isFocused, backShown, backNavigationElementFn])
 }
 
 export default useNavigationBack

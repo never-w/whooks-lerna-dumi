@@ -19,7 +19,7 @@ group:
 ### 基础示例
 
 ```typescript
-import { useNavigationBack } from 'w-rnhooks'
+import { useNavigationBack } from '@fruits-chain/hooks-laba-rn'
 
 useNavigationBack({
   callback: () => {

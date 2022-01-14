@@ -3,7 +3,7 @@
  * desc: 默认为 boolean 切换，基础用法与 useBoolean 一致。
  */
 import React from 'react'
-import { useToggle } from 'w-hooks'
+import { useToggle } from '@fruits-chain/hooks-laba'
 
 export default () => {
   const [state, { toggle, setLeft, setRight }] = useToggle()

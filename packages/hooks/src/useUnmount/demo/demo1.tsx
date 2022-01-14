@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react'
 import { message } from 'antd'
-import { useUnmount } from 'w-hooks'
+import { useUnmount } from '@fruits-chain/hooks-laba'
 
 const MyComponent = () => {
   useUnmount(() => {
