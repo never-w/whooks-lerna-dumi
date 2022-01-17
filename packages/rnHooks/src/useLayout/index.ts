@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { LayoutChangeEvent } from 'react-native'
 
 interface LayoutRectangle {
   x: number
@@ -14,7 +15,10 @@ export default function useLayout() {
     width: 0,
     height: 0,
   })
-  const onLayout = useCallback(e => setLayout(e.nativeEvent.layout as LayoutRectangle), [])
+  const onLayout = useCallback(
+    (e: LayoutChangeEvent) => setLayout(e.nativeEvent.layout as LayoutRectangle),
+    [],
+  )
 
   return {
     onLayout,
