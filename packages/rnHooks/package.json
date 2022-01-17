@@ -1,28 +1,45 @@
 {
   "name": "@fruits-chain/hooks-laba-rn",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "description",
   "author": "yinqiao<1737666820@qq.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "es",
+    "README.md"
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "devDependencies": {
-    "@react-navigation/native": "^6.0.6",
-    "@types/react-native": "^0.66.9",
-    "react-native": "^0.66.4"
+  "peerDependencies": {
+    "@react-navigation/native": "^5.9.8",
+    "@types/react-native": "^0.66.1",
+    "react-native": "0.64.2",
+    "react-native-safe-area-context": "^3.3.2"
   },
   "dependencies": {
-    "@fruits-chain/hooks-laba": "^1.0.0",
+    "@fruits-chain/hooks-laba": "^0.0.5"
+  },
+  "devDependencies": {
+    "@react-navigation/native": "^5.9.8",
+    "@types/react-native": "^0.66.1",
+    "react-native": "0.64.2",
     "react-native-safe-area-context": "^3.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjfruit/hooks-laba.git",
+    "branch": "master",
+    "platform": "github"
+  },
+  "gitHead": "0094170fc6bd0daf01ffa787e19ba9ffa37fc684"
 }
