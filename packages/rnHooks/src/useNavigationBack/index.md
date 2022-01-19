@@ -41,3 +41,4 @@ useNavigationBack({
 | backNavigationElementFn | 自定义左上角返回按钮函数，形参`handleBackArrow`是你自定义的 callback，用法如上面 API    | `(handleBackArrow: VoidFunction) => React.ReactNode` | -      |
 | resetHeaderBack         | 可选，是否重置左上角的返回按钮                                                          | `boolean`                                            | true   |
 | backShown               | 可选，是否隐藏返回按键                                                                  | `boolean`                                            | true   |
+| isBackHandle            | 可选，是否启用 Android 物理返回按钮功能                                                 | `boolean`                                            | true   |

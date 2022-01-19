@@ -4,34 +4,34 @@ import { useNavigation } from '@react-navigation/native'
 interface UseNavigationHeaderCustomColorParams {
   /**
    * 自定义颜色
-   * @default 主题色
+   * @default title的颜色
    */
   color?: string
   /**
    * 自定义头部样式
    */
-  headerStyle: Object
+  backgroundColor?: string
   /**
    * 自定义导航左上角组件fn
    */
-  headerLeft: () => React.ReactElement<any, any>
+  headerLeft?: (props: any) => React.ReactElement<any, any>
 }
 
-const useNavigationHeaderCustomColor = (
-  options?: UseNavigationHeaderCustomColorParams,
-) => {
-  const { color, headerStyle, headerLeft } = options || {}
+const useNavigationHeaderCustomColor = (options?: UseNavigationHeaderCustomColorParams) => {
   const navigation = useNavigation()
+  const { color = '#fff', backgroundColor = '#0065FE', headerLeft = null } = options || {}
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerStyle,
+      headerStyle: {
+        backgroundColor,
+      },
       headerTitleStyle: {
-        color: '#fff',
+        color,
       },
       headerLeft,
     })
-  }, [color, headerLeft, headerStyle, navigation])
+  }, [backgroundColor, color, headerLeft, navigation])
 }
 
 export default useNavigationHeaderCustomColor

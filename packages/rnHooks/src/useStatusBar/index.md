@@ -12,7 +12,7 @@ group:
 
 # useStatusBar
 
-获取设备安全区域的高度
+自定义状态栏高亮和是否透明
 
 ## API
 

@@ -12,7 +12,7 @@ group:
 
 # useNavigationRight
 
-自定义导航右上角组件，并且自定义点击事件 callback
+自定义导航右上角组件
 
 ## 代码演示
 
@@ -21,17 +21,11 @@ group:
 ```typescript
 import { useNavigationRight } from '@fruits-chain/hooks-laba-rn'
 
-useNavigationRight({
-  callback: () => {
-    // do something
-  },
-  headerRightFn: callback => <CustomCom onPress={callback} />,
-})
+useNavigationRight(<CustomCom onPress={() => {}} />)
 ```
 
 ### 参数
 
-| 参数          | 说明                           | 类型                                          | 默认值 |
-| ------------- | ------------------------------ | --------------------------------------------- | ------ |
-| callback      | 自定义导航右上角组件的回调函数 | `VoidFunction`                                | -      |
-| headerRightFn | 自定义导航右上角组件           | `(callback: VoidFunction) => React.ReactNode` | -      |
+| 参数              | 说明                 | 类型              | 默认值 |
+| ----------------- | -------------------- | ----------------- | ------ |
+| NavRightCustomCom | 自定义导航右上角组件 | `React.ReactNode` | -      |
